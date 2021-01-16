@@ -1,13 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Rubik&display=swap");
+* {
+  font-family: "Rubik", sans-serif;
+}
+.nav_bg {
+  font-size: 20px;
+  font-weight: 200;
+}
+.navbar-brand {
+  font-family: "Dancing Script", cursive !important;
+  font-size: 45px !important;
+  font-weight: bold !important;
+  color: teal !important;
+}
+.navbar-brand:hover {
+  color: rgb(0, 57, 83) !important;
+}
+.nav-link:hover {
+  color: teal !important;
+}
+.menu-active {
+  color: teal !important;
+  border-bottom: 2px solid teal;
+}
+.btn-outline-info:hover {
+  background-color: teal !important;
+  color: white !important;
+}
+.btn-outline-info {
+  color: teal !important;
+  border-color: teal !important;
+  border-radius: 50px !important;
+}
+.animate {
+  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+@-moz-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-brand {
+    font-size: 25px !important;
+  }
 }
